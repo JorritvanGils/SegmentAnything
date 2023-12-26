@@ -19,4 +19,5 @@ set-up segment-anything
 13) cd /home/jorrit/.cache/huggingface/hub/models--ybelkada--segment-anything/snapshots/16edb607b39bac8636944450b6cd782423556076/checkpoints/
     cp sam_vit_b_01ec64.pth /media/jorrit/segment-anything/checkpoints/
 13) nav to scripts and create generate_masks.py
+14) python3 scripts/generate_masks.py 
 
