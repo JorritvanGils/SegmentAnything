@@ -18,7 +18,7 @@ sam = sam_model_registry["vit_b"](checkpoint=checkpoint_path)
 predictor = SamPredictor(sam)
 
 # Set an example image (replace with your image path)
-image_path = "/media/jorrit/segment-anything/images_inference/Sucre.jpeg"
+image_path = "/media/jorrit/segment-anything/images_inference/sucre.jpeg"
 image = Image.open(image_path)
 image_np = np.array(image)
 print('image_np.shape:', image_np.shape)
