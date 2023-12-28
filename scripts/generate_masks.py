@@ -10,15 +10,23 @@ def show_points(coords, labels, ax, marker_size=375):
     ax.scatter(pos_points[:, 0], pos_points[:, 1], color='green', marker='*', s=marker_size, edgecolor='white', linewidth=1.25)
     ax.scatter(neg_points[:, 0], neg_points[:, 1], color='red', marker='*', s=marker_size, edgecolor='white', linewidth=1.25)
 
-# Load the ViT-H SAM model checkpoint
-checkpoint_path = "/media/jorrit/segment-anything/checkpoints/sam_vit_b_01ec64.pth"
-sam = sam_model_registry["vit_b"](checkpoint=checkpoint_path)
+# ViT-B SAM model checkpoint 
+# https://huggingface.co/ybelkada/segment-anything
+checkpoint_path = "/media/jorrit/SegmentAnything/checkpoints/sam_vit_b_01ec64.pth"
+model_type = "vit_b"
+
+# # ViT-H SAM model checkpoint
+# # https://github.com/facebookresearch/segment-anything
+# checkpoint_path = "/media/jorrit/SegmentAnything/checkpoints/sam_vit_h_4b8939.pth"
+# model_type = "vit_h"
+
+sam = sam_model_registry[model_type](checkpoint=checkpoint_path)
 
 # Create a predictor
 predictor = SamPredictor(sam)
 
 # Set an example image (replace with your image path)
-image_path = "/media/jorrit/segment-anything/images_inference/sucre.jpeg"
+image_path = "/media/jorrit/SegmentAnything/images_inference/sucre.jpeg"
 image = Image.open(image_path)
 image_np = np.array(image)
 print('image_np.shape:', image_np.shape)
