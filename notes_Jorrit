@@ -21,3 +21,10 @@ set-up segment-anything
 13) nav to scripts and create generate_masks.py
 14) python3 scripts/generate_masks.py 
 
+How to select a kernel for a .ipynb file within vs code
+
+set-up jupyter
+1) source venv/bin/activate
+2) pip install jupyter
+3) jupyter notebook
+
