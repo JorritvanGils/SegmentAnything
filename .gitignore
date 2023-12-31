@@ -41,6 +41,8 @@ _darcs
 yarn.lock
 package-lock.json
 
+# later added
 checkpoints/
-
 output_plots/
+demo/model
+venv/

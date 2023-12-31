@@ -9,7 +9,7 @@ set-up segment-anything
 
 3) pip install virtualenv # if needed
 4) python3 -m virtualenv venv
-5) source venv/local/bin/activate
+5) source venv/local/bin/activate # deactivate to exit
 6) pip install -e .
 7) pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 8) pip install opencv-python pycocotools matplotlib onnxruntime onnx protobuf==3.19.6
@@ -24,7 +24,19 @@ set-up segment-anything
 How to select a kernel for a .ipynb file within vs code
 
 set-up jupyter
-1) source venv/bin/activate
+1) source venv/local/bin/activate
 2) pip install jupyter
 3) jupyter notebook
+
+onnx example
+1) just ignored the error: ModuleNotFoundError: No module named onnx.reference
+the idea was to do this, but didnt do it -> source ~/venv38/bin/activate # Create a new virtual environment with Python 3.8
+ notebook completed anyway
+
+Segment Anything Simple Web demo
+1) sudo npm install -g yarn
+2) yarn && yarn start
+
+
+
 
