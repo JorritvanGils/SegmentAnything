@@ -21,6 +21,8 @@ import npyjs from "npyjs";
 const IMAGE_PATH = "/assets/data/truck.jpg";
 const IMAGE_EMBEDDING = "/assets/data/truck_embedding.npy";
 const MODEL_DIR = "/model/sam_onnx_example.onnx";
+// const MODEL_DIR = "/media/jorrit/SegmentAnything/demo/model/sam_onnx_example.onnx";
+
 
 const App = () => {
   const {
