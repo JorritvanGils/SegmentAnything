@@ -31,14 +31,14 @@ set-up jupyter
 3) jupyter notebook
 
 onnx example
-1) just ignored the error: ModuleNotFoundError: No module named onnx.reference
-the idea was to do this, but didnt do it -> source ~/venv38/bin/activate # Create a new virtual environment with Python 3.8
- notebook completed anyway
+1) error: ModuleNotFoundError: No module named onnx.reference. 'pip install onnx' via the env didnt work but 
+    '!pip install onnx' added to the notebook onnx_model_example.ipynb worked
+2) onnxruntime had to be downgraded via pip install onnxruntime==1.15.1 to also get the quantized (faster) model
+    pip uninstall onnxruntime
+    pip install onnxruntime==1.15.1
 
 Segment Anything Simple Web demo
 1) sudo npm install -g yarn
+2) cd demo
 2) yarn && yarn start
-
-
-
 
