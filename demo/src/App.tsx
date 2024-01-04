@@ -20,8 +20,8 @@ import npyjs from "npyjs";
 // Define image, embedding and model paths
 const IMAGE_PATH = "/assets/data/truck.jpg";
 const IMAGE_EMBEDDING = "/assets/data/truck_embedding.npy";
-// const MODEL_DIR = "/model/sam_onnx_example_no_error.onnx";
 const MODEL_DIR = "/model/sam_onnx_no_error_quantized_example.onnx";
+// const MODEL_DIR = "/model/sam_onnx_example_no_error.onnx";
 // const MODEL_DIR = "/media/jorrit/SegmentAnything/demo/model/sam_onnx_example.onnx";
 
 
