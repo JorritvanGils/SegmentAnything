@@ -46,4 +46,4 @@ checkpoints/
 output_plots/
 demo/model
 venv/
-notes_Jorrit
+segment_anything_notes.txt
