@@ -40,5 +40,5 @@ onnx example
 Segment Anything Simple Web demo
 1) sudo npm install -g yarn
 2) cd demo
-2) yarn && yarn start
+3) yarn && yarn start
 
